@@ -105,4 +105,9 @@ const AuthenticatedApp = () => {
         <Route path="/nobar" element={<NobarLobby />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
-    </Routes>
+    </Routes>    </Routes>
+  </Suspense>
+)
+}
+
+export default App
