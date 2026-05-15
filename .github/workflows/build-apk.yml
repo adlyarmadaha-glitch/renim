@@ -18,6 +18,7 @@ jobs:
         with:
           node-version: '20'
       - run: npm install
+      - run: rm -rf node_modules/.vite dist
       - run: npm install @capacitor/core @capacitor/cli @capacitor/android
       - run: npx vite build --config vite.config.android.js
         env:
