@@ -1,0 +1,31 @@
+{
+  "name": "StaffChat",
+  "type": "object",
+  "properties": {
+    "sender_id": {
+      "type": "string",
+      "description": "ID pengirim"
+    },
+    "sender_name": {
+      "type": "string",
+      "description": "Nama pengirim"
+    },
+    "sender_role": {
+      "type": "string",
+      "enum": [
+        "staff",
+        "admin"
+      ],
+      "description": "Role pengirim"
+    },
+    "text": {
+      "type": "string",
+      "description": "Isi pesan"
+    }
+  },
+  "required": [
+    "sender_name",
+    "text",
+    "sender_role"
+  ]
+}

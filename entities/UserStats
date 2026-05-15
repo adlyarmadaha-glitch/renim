@@ -1,0 +1,40 @@
+{
+  "name": "UserStats",
+  "type": "object",
+  "properties": {
+    "user_id_local": {
+      "type": "string",
+      "description": "ID user lokal"
+    },
+    "total_exp": {
+      "type": "number",
+      "description": "Total EXP user",
+      "default": 0
+    },
+    "level": {
+      "type": "number",
+      "description": "Level saat ini",
+      "default": 1
+    },
+    "ras": {
+      "type": "string",
+      "description": "Ras RPG"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "Nama tampilan"
+    },
+    "username": {
+      "type": "string",
+      "description": "Username"
+    },
+    "user_role": {
+      "type": "string",
+      "description": "Role user"
+    }
+  },
+  "required": [
+    "user_id_local",
+    "user_name"
+  ]
+}

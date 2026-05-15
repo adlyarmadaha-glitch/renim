@@ -1,0 +1,37 @@
+{
+  "name": "TicketMessage",
+  "type": "object",
+  "properties": {
+    "ticket_id": {
+      "type": "string",
+      "description": "ID tiket induk"
+    },
+    "sender_id": {
+      "type": "string",
+      "description": "ID pengirim"
+    },
+    "sender_name": {
+      "type": "string",
+      "description": "Nama pengirim"
+    },
+    "sender_role": {
+      "type": "string",
+      "enum": [
+        "user",
+        "staff",
+        "admin"
+      ],
+      "description": "Role pengirim"
+    },
+    "text": {
+      "type": "string",
+      "description": "Isi pesan"
+    }
+  },
+  "required": [
+    "ticket_id",
+    "sender_name",
+    "text",
+    "sender_role"
+  ]
+}

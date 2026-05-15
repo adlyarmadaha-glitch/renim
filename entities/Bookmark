@@ -1,0 +1,30 @@
+{
+  "name": "Bookmark",
+  "type": "object",
+  "properties": {
+    "anime_id": {
+      "type": "string",
+      "description": "ID anime dari API"
+    },
+    "title": {
+      "type": "string",
+      "description": "Judul anime"
+    },
+    "poster": {
+      "type": "string",
+      "description": "URL poster anime"
+    },
+    "status": {
+      "type": "string",
+      "description": "Status anime"
+    },
+    "score": {
+      "type": "string",
+      "description": "Rating anime"
+    }
+  },
+  "required": [
+    "anime_id",
+    "title"
+  ]
+}

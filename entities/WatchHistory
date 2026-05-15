@@ -1,0 +1,36 @@
+{
+  "name": "WatchHistory",
+  "type": "object",
+  "properties": {
+    "anime_id": {
+      "type": "string",
+      "description": "ID anime"
+    },
+    "episode_id": {
+      "type": "string",
+      "description": "ID episode"
+    },
+    "anime_title": {
+      "type": "string",
+      "description": "Judul anime"
+    },
+    "episode_title": {
+      "type": "string",
+      "description": "Judul episode"
+    },
+    "poster": {
+      "type": "string",
+      "description": "URL poster anime"
+    },
+    "watched_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Waktu terakhir ditonton"
+    }
+  },
+  "required": [
+    "anime_id",
+    "episode_id",
+    "anime_title"
+  ]
+}

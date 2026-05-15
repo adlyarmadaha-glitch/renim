@@ -1,0 +1,48 @@
+{
+  "name": "CommentReply",
+  "type": "object",
+  "properties": {
+    "comment_id": {
+      "type": "string",
+      "description": "ID komentar induk"
+    },
+    "anime_id": {
+      "type": "string",
+      "description": "ID anime/chapter"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "Nama user"
+    },
+    "username": {
+      "type": "string",
+      "description": "Username"
+    },
+    "user_id_local": {
+      "type": "string",
+      "description": "ID user lokal"
+    },
+    "user_role": {
+      "type": "string",
+      "description": "Role user"
+    },
+    "user_ras": {
+      "type": "string",
+      "description": "Ras RPG user"
+    },
+    "user_level": {
+      "type": "number",
+      "description": "Level user"
+    },
+    "text": {
+      "type": "string",
+      "description": "Isi reply"
+    }
+  },
+  "required": [
+    "comment_id",
+    "anime_id",
+    "text",
+    "user_name"
+  ]
+}

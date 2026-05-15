@@ -1,0 +1,27 @@
+{
+  "name": "CustomEmoji",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nama emoji kustom (tanpa spasi, seperti :namaemoji:)"
+    },
+    "url": {
+      "type": "string",
+      "description": "URL gambar atau GIF emoji"
+    },
+    "category": {
+      "type": "string",
+      "description": "Kategori emoji"
+    },
+    "is_animated": {
+      "type": "boolean",
+      "description": "Apakah emoji ini GIF/animasi",
+      "default": false
+    }
+  },
+  "required": [
+    "name",
+    "url"
+  ]
+}

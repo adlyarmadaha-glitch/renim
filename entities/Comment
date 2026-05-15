@@ -1,0 +1,43 @@
+{
+  "name": "Comment",
+  "type": "object",
+  "properties": {
+    "anime_id": {
+      "type": "string",
+      "description": "ID anime atau chapter yang dikomentari"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "Nama tampilan user"
+    },
+    "username": {
+      "type": "string",
+      "description": "Username unik"
+    },
+    "user_id_local": {
+      "type": "string",
+      "description": "ID user dari localStorage auth"
+    },
+    "user_role": {
+      "type": "string",
+      "description": "Role: user atau admin"
+    },
+    "user_ras": {
+      "type": "string",
+      "description": "Ras RPG user"
+    },
+    "user_level": {
+      "type": "number",
+      "description": "Level RPG user saat berkomentar"
+    },
+    "text": {
+      "type": "string",
+      "description": "Isi komentar"
+    }
+  },
+  "required": [
+    "anime_id",
+    "text",
+    "user_name"
+  ]
+}

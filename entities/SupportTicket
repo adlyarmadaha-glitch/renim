@@ -1,0 +1,76 @@
+{
+  "name": "SupportTicket",
+  "type": "object",
+  "properties": {
+    "user_id_local": {
+      "type": "string",
+      "description": "ID user lokal"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "Nama user"
+    },
+    "username": {
+      "type": "string",
+      "description": "Username"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "Email user"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "bug",
+        "suggestion",
+        "question",
+        "complaint",
+        "other"
+      ],
+      "description": "Kategori tiket",
+      "default": "bug"
+    },
+    "title": {
+      "type": "string",
+      "description": "Judul masalah"
+    },
+    "description": {
+      "type": "string",
+      "description": "Deskripsi detail"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "in_progress",
+        "resolved",
+        "closed"
+      ],
+      "description": "Status tiket",
+      "default": "open"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "default": "medium"
+    },
+    "admin_reply": {
+      "type": "string",
+      "description": "Balasan admin"
+    },
+    "admin_name": {
+      "type": "string",
+      "description": "Nama admin yang membalas"
+    }
+  },
+  "required": [
+    "user_name",
+    "title",
+    "description"
+  ]
+}
