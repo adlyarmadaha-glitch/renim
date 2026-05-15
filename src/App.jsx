@@ -105,9 +105,19 @@ const AuthenticatedApp = () => {
         <Route path="/nobar" element={<NobarLobby />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
-    </Routes>    </Routes>
+    </Routes>
   </Suspense>
-)
-}
+  );
+};
 
-export default App
+export default function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <Router>
+          <AuthenticatedApp />
+        </Router>
+      </AuthProvider>
+    </QueryClientProvider>
+  );
+}
