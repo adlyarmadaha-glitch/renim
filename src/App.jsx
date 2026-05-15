@@ -25,7 +25,6 @@ const MangaReader = lazy(() => import('./pages/MangaReader'));
 const AdminPanel = lazy(() => import('./pages/AdminPanel'));
 const DonghuaList = lazy(() => import('./pages/DonghuaList'));
 const DonghuaDetail = lazy(() => import('./pages/DonghuaDetail'));
-const DonghuaEpisodeWatch = lazy(() => import('./pages/DonghuaEpisodeWatch'));
 const DonghuaHistory = lazy(() => import('./pages/DonghuaHistory'));
 const MangaHistory = lazy(() => import('./pages/MangaHistory'));
 const StaffPanel = lazy(() => import('./pages/StaffPanel'));
@@ -97,7 +96,6 @@ const AuthenticatedApp = () => {
         <Route path="/admin" element={<AdminPanel />} />
         <Route path="/donghua" element={<DonghuaList />} />
         <Route path="/donghua/history" element={<DonghuaHistory />} />
-        <Route path="/donghua/episode/:episodeSlug" element={<DonghuaEpisodeWatch />} />
         <Route path="/donghua/:slug" element={<DonghuaDetail />} />
         <Route path="/staff" element={<StaffPanel />} />
         <Route path="/my-tickets" element={<MyTickets />} />
